@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,8 +17,13 @@ class Lab06AdvancedUI extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
-              Image.network(
-                  'https://static.vecteezy.com/system/resources/thumbnails/032/158/537/small/silhouette-of-lonely-men-full-of-sadness-and-depression-on-a-riverside-ai-generated-photo.jpg'),
+              CachedNetworkImage(
+                imageUrl:
+                    "https://cdn.prod.website-files.com/61845f7929f5aa517ebab941/6440f9477c2a321f0dd6ab61_How%20Artificial%20Intelligence%20(AI)%20Is%20Used%20In%20Biometrics.jpg",
+                placeholder: (context, url) => CircularProgressIndicator(),
+                errorWidget: (context, url, error) => Image.network(
+                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmWru8q17zpOzzzT1s475ZS_8fOL1GS0teSw&s'),
+              ),
               Expanded(
                 child: Image(
                   image: NetworkImage(
