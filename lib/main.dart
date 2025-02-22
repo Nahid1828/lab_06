@@ -17,7 +17,7 @@ class Lab06AdvancedUI extends StatelessWidget {
           child: Column(
             children: [
               Image.network(
-                  'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos%2Fimage&psig=AOvVaw0DQvAhQGpr_nVKKf0NeNTV&ust=1740283506313000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPi4pLSz1osDFQAAAAAdAAAAABAE'),
+                  'https://static.vecteezy.com/system/resources/thumbnails/032/158/537/small/silhouette-of-lonely-men-full-of-sadness-and-depression-on-a-riverside-ai-generated-photo.jpg'),
               Expanded(
                 child: Image(
                   image: NetworkImage(
